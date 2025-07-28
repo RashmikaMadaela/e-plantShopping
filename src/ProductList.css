@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .navbar .ul {
@@ -213,6 +214,33 @@ body {
   
   .product-button:hover {
     background-color: #45a049;
+  }
+
+  .category-textbox {
+    background-color: #e8f5e9; /* Light green background */
+    color: #388e3c; /* Dark green text */
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tag-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .maintext-nav {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #388e3c; /* Dark green */
+    display: flex;
+    justify-content: center;  /* Horizontal */
   }
   
   .product-button.added-to-cart {

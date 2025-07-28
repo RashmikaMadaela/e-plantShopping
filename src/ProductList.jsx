@@ -268,7 +268,7 @@ function ProductList({ onHomeClick }) {
                     <div className="luxury">
                         <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
                         <a href="/" onClick={(e) => handleHomeClick(e)}>
-                            <div>
+                            <div className='tag-text'>
                                 <h3 style={{ color: 'white' }}>Paradise Nursery</h3>
                                 <i style={{ color: 'white' }}>Where Green Meets Serenity</i>
                             </div>
@@ -277,7 +277,7 @@ function ProductList({ onHomeClick }) {
 
                 </div>
                 <div style={styleObjUl}>
-                    <div> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>
+                    <div className='maintext-nav'> <a href="#" onClick={(e) => handlePlantsClick(e)} style={styleA}>Plants</a></div>
                     <div style={{ position: 'relative' }}>
                       <a href="#" onClick={(e) => handleCartClick(e)} style={styleA}>
                         <h1 className='cart' style={{ margin: 0, padding: 0, position: 'relative' }}>
@@ -305,7 +305,7 @@ function ProductList({ onHomeClick }) {
                     {plantsArray.map((category, index) => ( // Loop through each category in plantsArray
   <div key={index}> {/* Unique key for each category div */}
     <h1>
-      <div>{category.category}</div> {/* Display the category name */}
+      <div className = "category-textbox">{category.category}</div> {/* Display the category name */}
     </h1>
     <div className="product-list"> {/* Container for the list of plant cards */}
       {category.plants.map((plant, plantIndex) => {
